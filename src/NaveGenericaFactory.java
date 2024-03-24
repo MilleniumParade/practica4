@@ -1,9 +1,19 @@
 import java.util.Scanner;
 
-// Implementación concreta de la fábrica para la creación de una Nave Genérica
+/**
+ * Una implementación concreta de {@code NaveFactory} para crear una nave
+ * génerica.
+ */
 class NaveGenericaFactory implements NaveFactory {
     Scanner scanner = new Scanner(System.in);
 
+    /**
+     * Selecciona un objeto que representa el sistema de propulsión de la nave
+     * espacial
+     * génerica.
+     *
+     * @return un objeto de tipo Propulsion
+     */
     public Propulsion crearPropulsion() {
         Propulsion propulsion = null;
         do {
@@ -30,6 +40,12 @@ class NaveGenericaFactory implements NaveFactory {
         return propulsion;
     }
 
+    /**
+     * Selecciona un objeto que representa el blindaje de la nave espacial
+     * génerica.
+     *
+     * @return un objeto de tipo Blindaje
+     */
     public Blindaje crearBlindaje() {
         Blindaje blindaje = null;
         do {
@@ -56,6 +72,12 @@ class NaveGenericaFactory implements NaveFactory {
         return blindaje;
     }
 
+    /**
+     * Selecciona un objeto que representa el tipo de cabina de la nave espacial
+     * génerica.
+     *
+     * @return un objeto de tipo Cabina
+     */
     public Cabina crearCabina() {
         Cabina cabina = null;
         do {
@@ -82,6 +104,12 @@ class NaveGenericaFactory implements NaveFactory {
         return cabina;
     }
 
+    /**
+     * Selecciona un objeto que representa el arma de la nave espacial
+     * génerica.
+     *
+     * @return un objeto de tipo Arma
+     */
     public Armas crearArmas() {
         Armas armas = null;
         do {
